@@ -5,18 +5,12 @@
     <title>복천박물관</title>
     <link href="css/main.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-	<link href="css/fullpage.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="js/common.js"></script>
-	<script src="js/fullpage.js"></script>
 </head>
-	
 <body>
    <div id="wrap">
-	<div style="height: auto; overflow: hidden;"> <!--style_div-->
-    <div id="fullpage" class="fp-responsive"><!--fullpage-->
-    <div class="section" data-anchor="section_1"><!--section-->
        <header id="header">
            <div class="header_inner">
                <h1><a href="#"><img src="images/common/logo.png" alt="복천박물관"></a></h1>
@@ -102,9 +96,8 @@
            
 		    
 	   </article>
-		</div><!--section-->
 	   
-		<div class="section sec02 fp-auto-height-responsive" data-anchor="section_2"><!--section-->
+	   
 		<section id="section1">
 		
 			<div class="layout">
@@ -165,10 +158,7 @@
 		
 	
 		</section>
-		 </div><!--section-->
 	   
-		
-		<div class="section sec03 fp-auto-height-responsive" data-anchor="section_3"><!--section-->
        	<section id="section2">
 			<div class="layout">
 				<h3>상설전시</h3>
@@ -193,9 +183,7 @@
 				
 			</div>
 		</section>
-		</div><!--section-->
-		
-		<div class="section sec04 fp-auto-height-responsive" data-anchor="section_4"><!--section-->
+	
 		<section id="section3"> 
 			<div class="layout">
 				<h3>안내/새소식</h3>
@@ -258,12 +246,12 @@
 			
 			</div>
 		</section>
-       	</div><!--section-->
+       
        
 	
 	
 	
-		<footer id="footer" class="section fp-auto-height">
+		<footer id="footer">
 			<div class="footer_up">
 				<ul class="logo_box">
 						<li><a href="#"><img src="images/common/site1.png" alt="부산광역시"></a></li>
@@ -296,7 +284,7 @@
 				
 				<ul class="sns_menu">
 					<li><a href="#"><img src="images/common/facebook.png" alt="Facebook"></a></li>
-					<li><a href="#"><img src="images/common/instargram.png" alt="Instargram"></a></li>
+					<li><a href="#"><img src="images/common/instar.png" alt="Instargram"></a></li>
 					<li><a href="#"><img src="images/common/youtube.png" alt="Youtube"></a></li>
 				</ul>
 				
@@ -314,28 +302,7 @@
 		
 		</footer>
        
-       	</div><!--//fullpage-->
-   		</div><!--//style_div-->
-    
-    
-
-    <script>
-    //fullpage
-    
-    new fullpage('#fullpage', {
-        navigation: true,
-        responsiveWidth: 1024,
-        fitToSection: false,
-        
-        anchors: ['section_1', 'section_2', 'section_3', 'section_4', 'section_5', 'section_6', 'section_7'],
-        parallax: true,
-        sectionsColor: ['#131c3b', '#131c3b', '#131c3b', '#131c3b'],
-        onLeave: function(origin, destination, direction) {
-            console.log("Leaving section" + origin.index);
-        },
-    });
-
-    </script>
+       
        
    </div>
     
