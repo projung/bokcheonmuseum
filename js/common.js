@@ -1,6 +1,21 @@
 $(document).ready(function(){
 
 	
+	
+	//상단고정
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $("#header").addClass("fix");
+        } else {
+            $("#header").removeClass("fix");
+        }
+    });
+    
+	
+	
+	
+	
+	
 	$('.dp2,.dp2_bg').hide();
     
     $('.gnb>li').mouseenter(function(){
@@ -72,17 +87,23 @@ $(document).ready(function(){
 
 	
 	
-	$('.main_banner').owlCarousel({
-    center: true,
-    items:2,
-    loop:true,
-        nav:true,
-    margin:30,
-    responsive:{
-        600:{
-            items:2
-        }}
+	
+	
+    $('#content .main_banner').slick({
+		slidesToShow: 3,
+        slidesToScroll: 1,
+		autoplay: true,
+        dots: true,
+		autoplaySpeed: 5000,
+        centerMode: true,
+		variableWidth: true,
+		focusOnSelect: true
     });
+	
+	
+
+	
+	
 	
 	
 	
