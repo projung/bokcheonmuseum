@@ -16,26 +16,26 @@ $(document).ready(function(){
 	
 	
 	
-	$('.dp2,.dp2_bg').hide();
+	$(".dp2,.dp2_bg").hide();
     
-    $('.gnb>li').mouseenter(function(){
-       $('.dp2,.dp2_bg').stop().slideDown()
+    $(".gnb>li").mouseenter(function(){
+       $(".dp2,.dp2_bg").stop().slideDown()
     });
         
-    $('.gnb>li').mouseleave(function(){
-       $('.dp2,.dp2_bg').stop().slideUp();    
+    $(".gnb>li").mouseleave(function(){
+       $(".dp2,.dp2_bg").stop().slideUp();    
     });
     
 	
 	
-	$('.sub_dp').hide();
+	$(".sub_dp").hide();
     
-    $('.lnb>li').mouseenter(function(){
-       $(this).children('.sub_dp').stop().slideDown()
+    $(".lnb>li").mouseenter(function(){
+       $(this).children(".sub_dp").stop().slideDown()
     });
         
-    $('.lnb>li').mouseleave(function(){
-      $(this).children('.sub_dp').stop().slideUp();    
+    $(".lnb>li").mouseleave(function(){
+      $(this).children(".sub_dp").stop().slideUp();    
     });
 	
     
@@ -89,7 +89,7 @@ $(document).ready(function(){
 	
 	
 	
-    $('#content .main_banner').slick({
+    $("#content .main_banner").slick({
 		slidesToShow: 3,
         slidesToScroll: 1,
 		autoplay: true,
